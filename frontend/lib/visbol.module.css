@@ -1,0 +1,47 @@
+.visbolreact {
+   box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.rendering {
+   width: 100%;
+   overflow: scroll;
+   box-sizing: content-box;
+}
+
+.viewport {
+   border: 3px solid black;
+   border-radius: 10px;
+   box-sizing: content-box;
+}
+
+.navigator {
+   height: 50px;
+   background-color: rgb(212, 233, 252);
+   font-family: 'Roboto',sans-serif;
+   color: rgb(77, 77, 77);
+   box-sizing: content-box;
+}
+
+.navigatortitle {
+   margin: 0;
+   padding-top: 12px;
+   padding-left: 10px;
+   width: 200px !important;
+   font-size: 20px;
+   display: inline-block;
+   color: rgb(54, 54, 54);
+   box-sizing: content-box;
+}
+
+.sizeadjustment {
+   float: right;
+   margin: 0 10px 0 0;
+   box-sizing: content-box;
+}
+
+.instruction {
+   margin: 10px 0 3px 3px;
+   font-size: 14px;
+   box-sizing: content-box;
+}
