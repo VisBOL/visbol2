@@ -41,11 +41,16 @@ VisBOL's front-end can be installed via npm or yarn:
 Via npm: `npm install visbol-react`
 Via yarn: `yarn add visbol-react`
 
-TALK MORE ABOUT SET UP
-
 # Examples
 
-TALK ABOUT VISBOL SITE
+One can view VisBOL 2's rendering of SBOL files using VisBOL 2's website.
+
+1) First, clone the repository: `git clone https://github.com/VisBOL/visbol2.git`
+2) Then, enter the VisBOL 2 Website directory: `cd website`
+3) Install dependences: `yarn install`
+4) Start the website locally: `npm start`
+5) The website can now be visited at `http://localhost:3000/`
+
 
 # Limitations
 
