@@ -51,6 +51,7 @@ One can view VisBOL 2's rendering of SBOL files using VisBOL 2's website.
 4) Start the website locally: `npm start`
 5) The website can now be visited at `http://localhost:3000/`
 
+![VisBOL Website Interface](./images/VisbolSite.png)
 
 # Limitations
 
