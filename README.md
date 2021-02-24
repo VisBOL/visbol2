@@ -44,37 +44,37 @@ Via yarn: `yarn add visbol-react`
 
 **1)** Create the backing data structure the front-end needs for rendering.
 
-Pass an SBOL file in the form of a string to the back-end's **createDisplay** function. This function returns a Javascript Promise, which will resolve as a "display list" (the backing data structure) that will be used to render the SBOL file:
-`import { createDisplay } from 'visbol'`
-`const getDisplayListPromise = createDisplay(<SBOL string here>);`
+Pass an SBOL file in the form of a string to the back-end's **createDisplay** function. This function returns a Javascript Promise, which will resolve as a "display list" (the backing data structure) that will be used to render the SBOL file:<br/>
+`import { createDisplay } from 'visbol'`<br/>
+`const getDisplayListPromise = createDisplay(<SBOL string here>);`<br/>
 
 **2)** Prepare the backing data structure for the front-end.
 
-Pass the display list obtained from the promise returned by VisBOL's createDisplay function (see step 1 above) to VisBOL's **prepareDisplay** function. This function will return a JSON object that we will pass to VisBOL's front-end renderer component:
-`import { prepareDisplay } from 'visbol'`
-`var preparedDisplay = {};`
-`getDisplayListPromise.then(displayList => {preparedDisplay = prepareDisplay(displayList)});`
+Pass the display list obtained from the promise returned by VisBOL's createDisplay function (see step 1 above) to VisBOL's **prepareDisplay** function. This function will return a JSON object that we will pass to VisBOL's front-end renderer component:<br/>
+`import { prepareDisplay } from 'visbol'`<br/>
+`var preparedDisplay = {};`<br/>
+`getDisplayListPromise.then(displayList => {preparedDisplay = prepareDisplay(displayList)});`<br/>
 
 **3)** Pass the prepared JSON obtained from step 2 to the front-end to be rendered
 
-VisBOL 2's front-end is a React component. If your web-app uses [React](https://reactjs.org/), simply pass the JSON object created in step 2 as the **display** prop to the component:
-`import FrontEnd from 'visbol-react'`
-`<FrontEnd display={preparedDisplay} />`
+VisBOL 2's front-end is a React component. If your web-app uses [React](https://reactjs.org/), simply pass the JSON object created in step 2 as the **display** prop to the component:<br/>
+`import FrontEnd from 'visbol-react'`<br/>
+`<FrontEnd display={preparedDisplay} />`<br/>
 Note: `preparedDisplay` is the JSON object we created in step 2.
 
 If your web-app does not use React:
-1) Install `React` and `ReactDOM` using npm
-`npm i react`
-`npm i react-dom`
-You can also use yarn to install these two packages.
-`yarn add react`
-`yarn add react-dom`
+1) Install `React` and `ReactDOM` using npm<br/>
+`npm i react`<br/>
+`npm i react-dom`<br/>
+You can also use yarn to install these two packages.<br/>
+`yarn add react`<br/>
+`yarn add react-dom`<br/>
 2) Import these two packages, along with VisBOL's front-end React component. Use these packages to
-render VisBOL's front-end React component.
-`import React from 'react'`
-`import ReactDOM from 'react-dom'`
-`import FrontEnd from 'visbol-react'`
-`ReactDOM.render(<FrontEnd display={preparedDisplay}/>, document.getElementById("<ID of div you want the front-end to be placed in>"))`
+render VisBOL's front-end React component.<br/>
+`import React from 'react'`<br/>
+`import ReactDOM from 'react-dom'`<br/>
+`import FrontEnd from 'visbol-react'`<br/>
+`ReactDOM.render(<FrontEnd display={preparedDisplay}/>, document.getElementById("<ID of div you want the front-end to be placed in>"))`<br/>
 Note: `preparedDisplay` is the JSON object we created in step 2.
 
 
