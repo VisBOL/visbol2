@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/visbol2/static/css/main.5d187eee.chunk.css",
+    "main.js": "/visbol2/static/js/main.59770227.chunk.js",
+    "main.js.map": "/visbol2/static/js/main.59770227.chunk.js.map",
+    "runtime-main.js": "/visbol2/static/js/runtime-main.78831ac3.js",
+    "runtime-main.js.map": "/visbol2/static/js/runtime-main.78831ac3.js.map",
+    "static/js/2.16d74390.chunk.js": "/visbol2/static/js/2.16d74390.chunk.js",
+    "static/js/2.16d74390.chunk.js.map": "/visbol2/static/js/2.16d74390.chunk.js.map",
+    "index.html": "/visbol2/index.html",
+    "static/css/main.5d187eee.chunk.css.map": "/visbol2/static/css/main.5d187eee.chunk.css.map",
+    "static/js/2.16d74390.chunk.js.LICENSE.txt": "/visbol2/static/js/2.16d74390.chunk.js.LICENSE.txt",
+    "static/media/visbol.f13fa792.png": "/visbol2/static/media/visbol.f13fa792.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78831ac3.js",
+    "static/js/2.16d74390.chunk.js",
+    "static/css/main.5d187eee.chunk.css",
+    "static/js/main.59770227.chunk.js"
+  ]
+}
