@@ -13,6 +13,9 @@ class Glyph {
      * not all of the information will be present after parsing an SBOL file
      */
     constructor(glyphInfo) {
+        if (glyphInfo.ranges) {
+            this.ranges = glyphInfo.ranges.map((range) => [range.start, range.end]);
+        }
         this.name = glyphInfo.name;
         this.id = glyphInfo.id;
         this.uri = glyphInfo.uri;

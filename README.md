@@ -1,3 +1,5 @@
+For further depth and information on VisBOL, visit the [VisBOL wiki on github](https://github.com/VisBOL/visbol2/wiki)
+
 **VisBOL** is an open source project providing visualization of synthetic biology designs using the [SBOL Visual](https://sbolstandard.org/visual-glyphs/) glyph set. VisBOL currently supports generation of designs from [SBOL](https://sbolstandard.org/) documents.
 
 # Interface

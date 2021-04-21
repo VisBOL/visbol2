@@ -10,14 +10,14 @@ function Rendering(props) {
     if (props.toLog)
         console.log(props.toLog);
     display.renderGlyphs();
-    const [size, setSize] = useState(3);
+    const [size, setSize] = useState(props.size ? props.size : 3);
     const [safety, setSafety] = useState(15);
     const backboneY = (display.height - display.largestInset);
-    const rendering = getRendering(display, backboneY);
+    const rendering = getRendering(display, backboneY, props.selection, props.mouseEvent, props.customTooltip);
     const backbones = getBackbones(display, backboneY, safety, setSafety);
     return (
         <div className={styles.visbolreact}>
-            <Navigator size={size} setSize={setSize} />
+            {!props.hideNavigation && <Navigator size={size} setSize={setSize} />}
             <div className={styles.rendering}>
                 <svg className={styles.viewport} width={(display.width + safety) * size} height={(display.height + display.largestInset + safety) * size} style={{ padding: (10 * size) + 'px' }}>
                     <g transform={`scale(${size}) translate(${safety / 3}, ${display.largestInset + safety / 2})`}>
@@ -30,7 +30,7 @@ function Rendering(props) {
     )
 }
 
-const getRendering = (display, backboneY) => {
+const getRendering = (display, backboneY, selectionID, mouseEvent, customTooltip) => {
     let index = -1;
     const rendering = display.toPlace.map(item => {
         if (item.isGlyph) {
@@ -42,12 +42,18 @@ const getRendering = (display, backboneY) => {
                 name={item.name}
                 tooltip={item.tooltip}
                 uri={item.uri}
+                id={item.id}
                 inset={item.inset}
                 labelLocation={item.labelLocation}
                 isComposite={item.isComposite}
                 strand={item.strand}
                 width={item.dimensions[0]}
                 backboneY={backboneY}
+                selectionID={selectionID}
+                dimensions={item.dimensions}
+                ranges={item.ranges}
+                mouseEvent={mouseEvent}
+                customTooltip={customTooltip}
             />;
         }
         else {
