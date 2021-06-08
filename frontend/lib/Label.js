@@ -4,8 +4,8 @@ import { text_length } from './properties';
 import { text_size } from './properties';
 import { font } from './properties';
 
-function truncateName(name, length) {
-    if(name.length <= length) {
+function truncateName(name, length, shouldTruncate) {
+    if(name.length <= length || !shouldTruncate) {
         return name;
     }
     var truncated = '';
@@ -33,7 +33,7 @@ function Label(props) {
         transform={`rotate(${rotate},${props.x - 1.5 + rotate_offset_x},${props.y - 2.5})`}
         x={props.x + 1}
         y={props.y - 1.5}>
-            {truncateName(props.name, text_length)}
+            {truncateName(props.name, text_length, props.truncate)}
         </text>
     )
 }

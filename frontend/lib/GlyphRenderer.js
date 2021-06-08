@@ -32,7 +32,7 @@ function GlyphRenderer(props) {
             title={props.tooltip}
             transform={`rotate(${rotate},${baseline_x + props.width / 2},${baseline_y})`}>
                 {selectionHighlight}
-                <Label name={props.name} x={props.labelLocation.x} y={props.backboneY - props.labelLocation.y} strand={props.strand}/>
+                <Label name={props.name} x={props.labelLocation.x} y={props.backboneY - props.labelLocation.y} strand={props.strand} truncate={props.truncate}/>
                 <ParametricSVG svgString={props.defaultString} innerOnly={true} params={{baseline_x: baseline_x, baseline_y: baseline_y}} />
                 {composite}
             </g>
@@ -50,7 +50,7 @@ function GlyphRenderer(props) {
             title={props.tooltip}
             transform={`rotate(${rotate},${baseline_x + props.width / 2},${baseline_y})`}>
                 {selectionHighlight}
-                <Label name={props.name} x={props.labelLocation.x} y={props.backboneY - props.labelLocation.y} strand={props.strand}/>
+                <Label name={props.name} x={props.labelLocation.x} y={props.backboneY - props.labelLocation.y} strand={props.strand} truncate={props.truncate} />
                 <ParametricSVG svgString={props.defaultString} innerOnly={true} params={{baseline_x: baseline_x, baseline_y: baseline_y}} />
                 {composite}
             </g>
