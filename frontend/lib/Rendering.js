@@ -80,7 +80,7 @@ const getBackbones = (display, backboneY, safety, setSafety) => {
         if (backbone.end === undefined)
             return null;
         index += 1;
-        return <Backbone stroke={1} length={(backbone.end - backbone.start) + safety / 4} x={backbone.start} y={backboneY} topologies={backbone.topologies} setSafety={setSafety} key={index}/>;
+        return <Backbone stroke={1} length={backbone.end + safety / 4} x={backbone.start} y={backboneY} topologies={backbone.topologies} setSafety={setSafety} key={index}/>;
     });
     return backbones;
 }

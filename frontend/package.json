@@ -1,6 +1,6 @@
 {
   "name": "visbol-react",
-  "version": "1.0.64",
+  "version": "1.0.65",
   "description": "SBOLv rendering with React",
   "main": "dist/rendering.js",
   "directories": {

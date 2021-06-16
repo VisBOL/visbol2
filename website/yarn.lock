@@ -11434,10 +11434,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-visbol-react@^1.0.64:
-  version "1.0.64"
-  resolved "https://registry.yarnpkg.com/visbol-react/-/visbol-react-1.0.64.tgz#1cb8975227591937af70487c8495dacad0629a3d"
-  integrity sha512-v+Uisu7vNxCz6g22Bp5OdZje2tEQCmZkbK1456qBv/yQOAhOUvsibmAicsJ0Rd4ZmI+35WDRJusSaDmvTft3bQ==
+visbol-react@^1.0.65:
+  version "1.0.65"
+  resolved "https://registry.yarnpkg.com/visbol-react/-/visbol-react-1.0.65.tgz#8f83a3ce3ddae73cfc8be336054c9ab0835bb004"
+  integrity sha512-rvdTi5yqm3FEYCJuZcktxQlgYq2p4r75htA3ceBNng7Fz8vTyf7cyXV8a3ujmBrPZy5C7INn6VX5wlfswTRnvw==
   dependencies:
     react-parametric-svg "^0.1.7"
 
@@ -11454,10 +11454,10 @@ visbol@1.4.33:
     sha1 "^1.1.1"
     urijs "^1.16.1"
 
-visbol@^2.0.16:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/visbol/-/visbol-2.0.16.tgz#a7d04930b2bd7571c5ce8a693dc861e98dd3eb81"
-  integrity sha512-FYZ3c402lfAhYqJK0V78oeR+QUGwUC4WGya2JJynqPXt1qP6hKefShdV9lFi0LRbJ5U2Ul8ip/GmyyxpzxeY5A==
+visbol@^2.0.17:
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/visbol/-/visbol-2.0.17.tgz#698963ec4d1e75d9106a1f98d1fd78fb3d7d463c"
+  integrity sha512-V9SMrDa0SHHZmVvf7GMz0yAsLl4DG3e0RoYrXctoua5bXr4fj8NVDYEe01nAEq9i7PLCLj6zZ/SWXfL2sg/Uvw==
   dependencies:
     sboljs "^2.1.9"
     visbol "1.4.33"

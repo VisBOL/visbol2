@@ -52,6 +52,10 @@ class Glyph {
         this.link = glyph.link;
     }
 
+    setCoords(x, y) {
+        this.coords = [x, y];
+    }
+
     /**
     * This is a recursive method that places all hooks and destination glyphs in the appropriate spot
     * @param {Display} display - the display that the glyph is in
@@ -107,11 +111,11 @@ class Glyph {
             return;
         switch (direction) {
             case 'north': {
-                this.coords = [tip.x - this.dimensions[0] / 2, tip.y];
+                this.setCoords(tip.x - this.dimensions[0] / 2, tip.y);
                 break;
             }
             default: {
-                this.coords = [tip.x, tip.y];
+                this.setCoords(tip.x, tip.y);
                 break;
             }
         }

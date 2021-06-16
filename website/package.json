@@ -14,8 +14,8 @@
     "sbolmeta": "^0.3.2",
     "sha1": "^1.1.1",
     "urijs": "^1.19.6",
-    "visbol": "^2.0.16",
-    "visbol-react": "^1.0.64",
+    "visbol": "^2.0.17",
+    "visbol-react": "^1.0.65",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
