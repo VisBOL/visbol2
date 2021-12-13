@@ -4,14 +4,32 @@ import Backbone from './Backbone';
 import { GlyphRenderer } from './GlyphRenderer';
 import { HookRenderer } from './HookRenderer';
 import styles from './visbol.module.css';
+import InlineSVG from 'svg-inline-react';
 
 function Rendering(props) {
-    const display = props.display;
+    console.log(props);
+    if (!props.display && !props.svg) {
+        console.log("no display or svg");
+        return null;
+    }
     if (props.toLog)
         console.log(props.toLog);
-    display.renderGlyphs();
     const [size, setSize] = useState(props.size ? props.size : 3);
     const [safety, setSafety] = useState(25);
+    if (props.svg) {
+        return (
+            <div className={styles.visbolreact}>
+                {!props.hideNavigation && <Navigator size={size} setSize={setSize} truncate={truncate} setTruncate={setTruncate} />}
+                <div className={styles.rendering}>
+                    <div className={styles.viewport} style={{ padding: (10 * size) + 'px', transform: `scale(${size / 3})`, transformOrigin: 'top left' }}>
+                        <InlineSVG src={props.svg} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    const display = props.display;
+    display.renderGlyphs();
     const [truncate, setTruncate] = useState(true);
     const backboneY = (display.height - display.largestInset);
     const rendering = getRendering(display, backboneY, props.selection, props.mouseEvent, props.customTooltip, truncate);

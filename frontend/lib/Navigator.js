@@ -7,7 +7,7 @@ function Navigator(props) {
             <div className={styles.titlecontainer}>VisBOL</div>
             <div className={styles.controlcontainer}>
                 <div className={styles.sizeadjustment}>
-                    <p className={styles.instruction}>Zoom</p>
+                    <div className={styles.instruction}>Zoom</div>
                     <input 
                     type='range'
                     min='0.5'

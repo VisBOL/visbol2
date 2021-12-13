@@ -14,6 +14,7 @@
    border: 2px solid #092327;
    border-radius: 10px;
    box-sizing: content-box;
+   width: fit-content;
 }
 
 .sizeadjustment {
@@ -27,7 +28,7 @@
 
 .instruction {
    margin: 3px 0 0 3px;
-   font-size: 0.8rem;
+   font-size: 12.5px;
    box-sizing: content-box;
 }
 
@@ -57,8 +58,9 @@
 }
 
 .labelinstruction {
-   font-size: 0.8rem;
+   font-size: 12.5px;
    margin-left: 1px;
+   padding-top: 4px;
 }
 
 .titlecontainer {
@@ -66,7 +68,7 @@
    align-items: center;
    justify-content: center;
    height: 100%;
-   font-size: 1.1rem;
-   margin-left: 1rem;
+   font-size: 18px;
+   margin-left: 16px;
    color: #8C271E;
 }

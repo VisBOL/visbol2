@@ -1,6 +1,6 @@
 {
   "name": "visbol-react",
-  "version": "1.0.65",
+  "version": "1.0.88",
   "description": "SBOLv rendering with React",
   "main": "dist/rendering.js",
   "directories": {
@@ -8,12 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --display-modules"
   },
   "author": "Benjamin Hatch",
   "license": "ISC",
   "dependencies": {
-    "react-parametric-svg": "^0.1.7"
+    "react-parametric-svg": "^0.1.7",
+    "svg-inline-react": "^3.2.1"
   },
   "peerDependencies": {
     "react": "^16.13.1 || ^17.0.0"
@@ -23,10 +24,10 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
-    "css-loader": "^5.2.6",
+    "css-loader": "^4.3.0",
+    "react": "^16.13.1",
     "style-loader": "^1.2.1",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "react": "^16.13.1"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
