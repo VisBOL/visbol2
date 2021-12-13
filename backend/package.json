@@ -4,8 +4,9 @@
   "description": "SBOLv rendering in JavaScript",
   "main": "index.js",
   "dependencies": {
+    "rdf-graph-array": "^0.3.0",
     "sboljs": "^2.1.9",
-    "visbol": "1.4.33"
+    "visbol": "1.4.34"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
