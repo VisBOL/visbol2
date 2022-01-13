@@ -5,7 +5,7 @@ const getInteractionList = require('visbol').getInteractionList;
 const getDisplayList = getDisplayListComponents.getDisplayList;
 
 function createDisplay(source) {
-   var promise = new Promise(function(resolve, reject) {
+    var promise = new Promise(function(resolve, reject) {
        SBOLDocument.loadRDF(source, function (err, sbol) {
            if (err) {
                console.log('error occured: ');

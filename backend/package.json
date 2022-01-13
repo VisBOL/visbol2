@@ -1,25 +1,28 @@
 {
   "name": "visbol",
-  "version": "2.0.18",
+  "version": "2.0.21",
   "description": "SBOLv rendering in JavaScript",
   "main": "index.js",
   "dependencies": {
     "rdf-graph-array": "^0.3.0",
-    "sboljs": "^2.1.9",
-    "visbol": "1.4.34"
+    "sboljs": "^2.2.8",
+    "visbol": "1.4.36"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.2.3",
     "babelify": "^10.0.0",
     "browserify": "^16.5.1",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "visbol-react": "^1.0.35"
   },
   "scripts": {
-    "build": "browserify browser.js -t babelify -o browserbuild.js"
+    "build": "browserify browser.js -t babelify -o browserbuild.js",
+    "prod": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
