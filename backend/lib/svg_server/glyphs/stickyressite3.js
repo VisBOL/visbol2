@@ -6,7 +6,7 @@ const defaultString = `
       height="100"
       glyphtype="3' Sticky Restriction Site"
       soterms="SO:0001976"
-      parametric:defaults="baseline_offset=0;baseline_x=0;baseline_y=25;height=8;pad_after=2;pad_before=2;pad_bottom=3;pad_top=3;width=15">
+      parametric:defaults="baseline_offset=0;baseline_x=0;baseline_y=25;height=10;pad_after=2;pad_before=2;width=17">
 
 <path
       id="sticky-restriction-site-background" 
